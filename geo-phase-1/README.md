@@ -1,4 +1,5 @@
-# Logic Study: Geographic Data & API Integration
+# Geographic Data & API Integration
+**Live Demo:** [https://lucent-kheer-2cdd77.netlify.app/](https://lucent-kheer-2cdd77.netlify.app/)
 
 This repository serves as a functional exploration of **D3.js** (Data-Driven Documents) and **Asynchronous API fetching**. Below is a technical breakdown of how the interface handles geography, state, and external data.
 
