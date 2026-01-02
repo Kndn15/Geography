@@ -1,0 +1,109 @@
+
+    /* 1. Make the background look like the ocean */
+    body { 
+        margin: 0; 
+        background-color:#3498db; 
+        font-family: 'Segoe UI', sans-serif;
+    }
+    #dark-theme{
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 2000;
+    }
+    #dark-theme button{
+        border-radius: 50%;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    #dark-theme button:hover{
+        background-color:#16213e;
+    }
+
+    /* 2. Style the countries and make them "pop" when you hover */
+    .country {
+        fill: #cccccc;
+        stroke: #ffffff;
+        stroke-width: 0.5;
+        transition: fill 0.3s; /* This makes the color change smoothly */
+        cursor: pointer;
+    }
+
+    .country:hover {
+        fill:burlywood; 
+    }
+
+    /* 3. Make the Info Box look like a floating card */
+    #infoBox {
+        background: rgba(255, 255, 255, 0.95); 
+        color: #2c3e50; 
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(5px);
+        position: fixed; 
+        top: 20px; 
+        right: 20px; 
+        width: 200px;
+        padding: 10px; 
+        border-radius: 15px; /* Round corners */
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Soft shadow */
+        display: none;
+        text-align: center;
+    }
+
+    #infoBox h2{
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db; 
+        padding-bottom: 5px;
+    }
+    /* 4. Style the text and the flag */
+    #countryName { margin: 0 0 10px 0; color: #2c3e50; }
+    #flagImg { 
+        width: 100%; 
+        border-radius: 8px; 
+        margin-top: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    body.dark-mode{
+        background-color: #1a1a2e;
+    }
+    body.dark-mode button{
+        background-color: #1a1a2e;
+    }
+    body.dark-mode #dark-theme button:hover{
+        background-color: #3498db;
+    }
+
+    body.dark-mode .country{
+        fill: #4b5d67;
+        stroke:#1a1a2e ;
+    }
+    body.dark-mode .country:hover{
+        fill: sandybrown;
+    }
+    body.dark-mode #infoBox{
+        background-color: #16213e;
+        color: #ffff;
+        border: 1px solid #3498db;
+    }
+    body.dark-mode #infoBox h2{
+        color: white;
+    }
+/*Mobile-Friendly CSS*/
+@media (max-width:600px){
+    #infoBox{
+        width: 80%;
+        left: 5%;
+        right: 5%;
+        top: auto;
+        bottom: 20px;
+    }
+    #infoBox h2{
+        font-size: 1.2rem;
+    }
+    #flagImg{
+        width: 120px;
+    }
+}
