@@ -37,7 +37,7 @@
 
     /* 3. Make the Info Box look like a floating card */
     #infoBox {
-        background: rgba(255, 255, 255, 0.95); 
+        background: #f8f9fa; 
         color: #2c3e50; 
         border: 1px solid rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(5px);
@@ -58,12 +58,15 @@
         padding-bottom: 5px;
     }
     /* 4. Style the text and the flag */
-    #countryName { margin: 0 0 10px 0; color: #2c3e50; }
+    #countryName { margin: 0 0 10px 0; 
+        color: #2c3e50; 
+    }
     #flagImg { 
         width: 100%; 
         border-radius: 8px; 
         margin-top: 15px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        border: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     body.dark-mode{
